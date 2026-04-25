@@ -98,10 +98,9 @@ def likes(request, id):
 
         post.save()
 
-        # Generate the URL for the current post's detail page
         print(post.id)
 
-        # Redirect back to the post's detail page
+        
         return redirect('/#'+id)
     
 @login_required(login_url='/loginn')
